@@ -6,7 +6,7 @@ from langchain_cohere.react_multi_hop.agent import create_cohere_react_agent
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.prompts import ChatPromptTemplate
 
-from src.msecrets import COHERE_API_KEY, TAVILY_API_KEY
+from src.config.msecrets import COHERE_API_KEY, TAVILY_API_KEY
 from src.stores.smsmagic import smsmagic_retriever_tool
 
 # Create search tool

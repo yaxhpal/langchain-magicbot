@@ -4,7 +4,7 @@ from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.vectorstores import Chroma
 from langchain_text_splitters import CharacterTextSplitter
 
-from src.msecrets import COHERE_API_KEY
+from src.config.msecrets import COHERE_API_KEY
 
 loader = WebBaseLoader("https://www.sms-magic.com/docs/portal/knowledge-base/sms-magic-web-portal-overview/")
 docs = loader.load()
